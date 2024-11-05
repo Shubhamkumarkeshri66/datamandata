@@ -2,8 +2,8 @@ import axios from "axios";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Resume from "../src/assets/ShubhamKeshri_CV.pdf"
-import QRCode from "react-qr-code";
+// import Resume from "../src/assets/ShubhamKeshri_CV.pdf"
+// import QRCode from "react-qr-code";
 //state management
 const App = () => {
   const [formdata, setformdata] = useState({
