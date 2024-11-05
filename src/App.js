@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Resume from "../src/assets/ShubhamKeshri_CV.pdf"
+import QRCode from "react-qr-code";
 const App = () => {
   const [formdata, setformdata] = useState({
     name: "",
@@ -32,9 +34,7 @@ const App = () => {
       console.error("Error submitting data:", error);
     }
   };
- 
 
- 
   return (
     <div className="container">
       <h1>Dataman Form</h1>
@@ -90,7 +90,7 @@ const App = () => {
         Female
         <input type="radio" name="gender" onChange={changeHandler} />
         Others */}
-        <label htmlFor="department">Department</label>
+        <label htmlFor="gender">Gender</label>
         <select name="gender" id="gender" onChange={changeHandler}>
           <option value="Other">Other</option>
           <option value="Male">Male</option>
@@ -127,6 +127,22 @@ const App = () => {
         </button> */}
         <button type="submit">Submit</button>
       </form>
+      {/* <a
+        href="https://api.whatsapp.com/send?phone=11282829029"
+        rel="noreferrer"
+        target="_blank"
+      >
+        WhatsApp
+      </a> */}
+      {/* <a className="btn btn-cv" href={Resume} download="ShubhamKeshri.pdf">
+        My Resume
+      </a> */}
+      {/* <QRCode
+      size={200}
+      bgColor="black"
+      fgColor="white"
+      value="https://facebook.com"
+      /> */}
     </div>
   );
 };
